@@ -20,7 +20,7 @@
             <!-- <p class="font-archivo max-w-md text-[#b8b5b0] leading-[1.6]">Seven artist and a resident piercer in the heart of Houma. Walk-ins welcome or find your artist and book directly.</p> -->
             <div class='space-x-2 mt-6'>
                 <button class="btn-primary spac">BOOK AN ARTIST</button>
-                <button class="btn-secondary">SEE THE WORK</button>
+                <button class="btn-secondary">TATTOO GALLERY</button>
             </div>
 		</div>
 	</div>
