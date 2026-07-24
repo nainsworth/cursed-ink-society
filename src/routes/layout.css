@@ -13,7 +13,7 @@
 
 @layer base {
 	body {
-		@apply bg-background text-base text-secondary;
+		@apply bg-background text-base text-secondary min-h-full min-w-full;
 	}
 }
 
