@@ -13,12 +13,15 @@
 
 @layer base {
 	body {
-		@apply bg-background text-base text-secondary min-h-full min-w-full;
+		@apply min-h-full min-w-full bg-background text-base text-secondary;
 	}
 }
 
 @layer components {
 	.btn-primary {
-		@apply bg-primary font-bold text-background hover:bg-primary/85;
+		@apply cursor-pointer bg-primary px-7 py-4 font-space-mono font-bold text-background hover:bg-primary/85;
+	}
+	.btn-secondary {
+		@apply cursor-pointer border border-secondary bg-transparent px-7 py-4 font-space-mono font-bold text-primary hover:border-primary;
 	}
 }
