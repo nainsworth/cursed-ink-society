@@ -19,10 +19,10 @@
 
 @layer components {
 	.btn-primary {
-		@apply cursor-pointer bg-primary px-7 py-4 font-space-mono font-bold text-background hover:bg-primary/85 uppercase;
+		@apply cursor-pointer bg-primary px-7 py-4 font-space-mono font-bold text-background hover:bg-primary/85 uppercase text-sm;
 	}
 	.btn-secondary {
-		@apply cursor-pointer border border-secondary bg-transparent px-7 py-4 font-space-mono font-bold text-primary hover:border-primary uppercase;
+		@apply cursor-pointer border border-secondary bg-transparent px-7 py-4 font-space-mono font-bold text-primary hover:border-primary uppercase text-sm;
 	}
 	.small-border {
 		border-bottom: 1px solid rgb(35, 35, 35);

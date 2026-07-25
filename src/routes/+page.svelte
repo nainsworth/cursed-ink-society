@@ -16,7 +16,7 @@
 	];
 </script>
 
-<section id="hero" class="relative h-[75vh] w-full overflow-hidden max-h-155">
+<section id="hero" class="relative h-[75vh] max-h-155 w-full overflow-hidden">
 	<video
 		id="hero-video"
 		src={heroVideo}
@@ -27,14 +27,14 @@
 		class="absolute inset-0 h-full w-full object-cover"
 	></video>
 
-	<div class="gradient absolute inset-0 flex items-center">
-		<div class="mx-auto w-full max-w-7xl p-10">
+	<div class="gradient absolute inset-0 flex items-center p-10">
+		<div class="mx-auto w-full max-w-7xl">
 			<div class="mt-12 space-y-4">
 				<p class="font-space-mono text-xs tracking-[0.28em]">HOUMA, LOUISIANA</p>
-				<h1 class="font-anton text-9xl leading-28 text-primary">
+				<h1 class="font-anton text-[132px] leading-28 text-primary">
 					TATTOOS <br /> <span>& PIERCINGS</span>
 				</h1>
-				<p class="max-w-md font-archivo leading-[1.6] text-[#b8b5b0]">
+				<p class="max-w-md font-archivo leading-[1.6] text-[#b8b5b0] mt-6 ">
 					Seven artist and a resident piercer in the heart of Houma. Come as a walk-in or find your
 					artist and book directly.
 				</p>
@@ -69,5 +69,4 @@
 	.gradient {
 		background: linear-gradient(rgba(11, 11, 11, 0.6), rgba(11, 11, 11, 0.98));
 	}
-
 </style>
