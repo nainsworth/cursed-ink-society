@@ -1,4 +1,6 @@
 <script>
+	import { resolve } from '$app/paths';
+
 	const currentYear = new Date().getFullYear();
 </script>
 
@@ -28,12 +30,12 @@
 				<div class="font-space-mono text-sm">
 					<p class="mb-3 font-bold text-primary uppercase">Explore</p>
 					<div class="flex flex-col gap-2">
-						<a href="#">Artists</a>
-						<a href="#">Tattoos</a>
-						<a href="#">Piercings</a>
-						<a href="#">Aftercare</a>
-						<a href="#">FAQ</a>
-						<a href="#">Contact</a>
+						<a href={resolve('/artists')}>Artists</a>
+						<a href={resolve('/tattoos')}>Tattoos</a>
+						<a href={resolve('/piercings')}>Piercings</a>
+						<a href={resolve('/aftercare')}>Aftercare</a>
+						<a href={resolve('/faq')}>FAQ</a>
+						<a href={resolve('/contact')}>Contact</a>
 					</div>
 				</div>
 
@@ -41,7 +43,9 @@
 					<p class="mb-3 font-bold text-primary uppercase">Follow</p>
 					<div class="flex flex-col gap-2">
 						<a href="https://www.instagram.com/cursedinksociety" target="_blank">Instagram</a>
-						<a href="https://www.facebook.com/Cursed-Ink-Society-61578184810084/" target="_blank">Facebook</a>
+						<a href="https://www.facebook.com/Cursed-Ink-Society-61578184810084/" target="_blank"
+							>Facebook</a
+						>
 						<a href="https://www.tiktok.com/@cursedinksociety" target="_blank">TikTok</a>
 						<a href="mailto:cursedinksociety@gmail.com" target="_blank">Email</a>
 					</div>

@@ -1,4 +1,5 @@
 <script>
+	import { resolve } from '$app/paths';
 	import heroVideo from '../assets/hero-video.mp4';
 </script>
 
@@ -25,8 +26,8 @@
 					artist and book directly.
 				</p>
 				<div class="mt-12 space-x-2">
-					<a href="#" class="btn-primary spac">BOOK AN ARTIST</a>
-					<a href="#" class="btn-secondary">TATTOO GALLERY</a>
+					<a href={resolve('/artists')} class="btn-primary spac">BOOK AN ARTIST</a>
+					<a href={resolve('/tattoos')} class="btn-secondary">TATTOO GALLERY</a>
 				</div>
 			</div>
 		</div>
