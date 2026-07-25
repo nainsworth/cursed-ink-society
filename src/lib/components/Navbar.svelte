@@ -2,8 +2,8 @@
 	import { resolve } from '$app/paths';
 </script>
 
-<nav class="py-4 px-10">
-	<div class="flex justify-between items-center">
+<nav class="py-4 px-10 small-border bg-background/90 backdrop-blur-sm z-50">
+	<div class="flex justify-between items-center max-w-7xl mx-auto">
 		<a href={resolve('/')} class="font-anton text-2xl text-primary">CURSED INK SOCIETY</a>
 
 		<ul class="flex gap-4 font-space-mono text-sm">
