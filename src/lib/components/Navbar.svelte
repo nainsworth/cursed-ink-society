@@ -7,16 +7,15 @@
 		<a href={resolve('/')} class="font-anton text-2xl text-primary">CURSED INK SOCIETY</a>
 
 		<ul class="flex gap-6 font-space-mono text-xs font-semibold tracking-wider uppercase">
-			<li><a href={resolve('/')}>HOME</a></li>
-			<li><a href={resolve('/artists')}>ARTISTS</a></li>
-			<li><a href={resolve('/tattoos')}>TATTOOS</a></li>
-			<li><a href={resolve('/piercings')}>PIERCINGS</a></li>
-			<li><a href={resolve('/aftercare')}>AFTERCARE</a></li>
+			<li><a href={resolve('/#artists')}>Artists</a></li>
+			<li><a href={resolve('/tattoos')}>Tattoos</a></li>
+			<li><a href={resolve('/piercings')}>Piercings</a></li>
+			<li><a href={resolve('/aftercare')}>Aftercare</a></li>
 			<li><a href={resolve('/faq')}>FAQ</a></li>
 			<li>
 				<a
 					href={resolve('/contact')}
-					class="btn-primary px-4 py-2 text-xs! font-semibold! hover:text-background!">CONTACT</a
+					class="btn-primary px-4 py-2 text-xs! font-semibold! hover:text-background!">Contact</a
 				>
 			</li>
 		</ul>

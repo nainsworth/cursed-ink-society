@@ -9,7 +9,7 @@
 <Hero />
 <Marquee />
 
-<section class="px-10 py-20">
+<section id="artists" class="px-10 pt-20 pb-10 small-border">
 	<div class="mx-auto max-w-7xl space-y-8">
 		<h2 class="font-anton text-6xl text-primary uppercase">The Artists</h2>
 

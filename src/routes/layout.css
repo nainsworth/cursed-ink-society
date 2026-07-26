@@ -13,6 +13,9 @@
 }
 
 @layer base {
+	html {
+		@apply scroll-smooth
+	}
 	body {
 		@apply min-h-full min-w-full bg-background text-base text-secondary;
 	}
