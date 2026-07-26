@@ -21,12 +21,12 @@
 				<h1 class="font-anton text-[132px] leading-28 text-primary">
 					TATTOOS <br /> <span>& PIERCINGS</span>
 				</h1>
-				<p class="mt-6 max-w-md font-archivo leading-[1.6] text-[#b8b5b0]">
+				<p class="mt-6 max-w-md font-archivo leading-[1.6] text-tertiary">
 					Seven artist and a resident piercer in the heart of Houma. Come as a walk-in or find your
 					artist and book directly.
 				</p>
 				<div class="mt-12 space-x-2">
-					<a href={resolve('/artists')} class="btn-primary spac">BOOK AN ARTIST</a>
+					<a href={resolve('/#artists')} class="btn-primary spac">BOOK AN ARTIST</a>
 					<a href={resolve('/tattoos')} class="btn-secondary">TATTOO GALLERY</a>
 				</div>
 			</div>

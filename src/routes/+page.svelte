@@ -28,8 +28,8 @@
 						class="h-128 w-full object-cover hover:drop-shadow-lg hover:drop-shadow-primary/50"
 					/>
 					<div class="mt-4">
-						<p class="text-sm font-bold text-primary">{artist.name}</p>
-						<p class="text-xs">{artist.role}</p>
+						<p class="font-bold text-primary">{artist.name}</p>
+						<p class="text-sm">{artist.role}</p>
 					</div>
 				</a>
 			{/each}
