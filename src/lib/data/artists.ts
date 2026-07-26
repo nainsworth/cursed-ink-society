@@ -13,6 +13,7 @@ export interface Artist {
 	image: string;
 	specialties: string[];
 	bio: string;
+	role: string;
 	instagram: string;
 }
 
@@ -23,6 +24,7 @@ export const artists: Artist[] = [
 		image: profileAngelle,
 		specialties: [],
 		bio: '',
+		role: 'Apprentice',
 		instagram: 'https://instagram.com/angelle_tattoos'
 	},
 	{
@@ -31,6 +33,7 @@ export const artists: Artist[] = [
 		image: profileAnthony,
 		specialties: [],
 		bio: '',
+		role: 'Artist',
 		instagram: 'https://instagram.com/buddha_ta2'
 	},
 	{
@@ -39,6 +42,7 @@ export const artists: Artist[] = [
 		image: profileAshley,
 		specialties: [],
 		bio: '',
+		role: 'Artist',
 		instagram: 'https://instagram.com/ashleyxxkarma'
 	},
 	{
@@ -47,6 +51,7 @@ export const artists: Artist[] = [
 		image: profileCody,
 		specialties: [],
 		bio: '',
+		role: 'Artist',
 		instagram: 'https://instagram.com/codycrochettattoos'
 	},
 	{
@@ -55,6 +60,7 @@ export const artists: Artist[] = [
 		image: profileHarley,
 		specialties: [],
 		bio: '',
+		role: 'Piercer',
 		instagram: 'https://instagram.com/harley.rose25'
 	},
 	{
@@ -63,6 +69,7 @@ export const artists: Artist[] = [
 		image: profileLuis,
 		specialties: [],
 		bio: '',
+		role: 'Artist',
 		instagram: 'https://instagram.com/ta2luis'
 	},
 	{
@@ -71,6 +78,7 @@ export const artists: Artist[] = [
 		image: profileNadiya,
 		specialties: [],
 		bio: '',
+		role: 'Artist',
 		instagram: 'https://instagram.com/electricsting'
 	},
 	{
@@ -79,6 +87,7 @@ export const artists: Artist[] = [
 		image: profileSeth,
 		specialties: [],
 		bio: '',
+		role: 'Artist',
 		instagram: 'https://instagram.com/sethta2_bp'
 	}
 ];
