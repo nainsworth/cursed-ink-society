@@ -9,7 +9,7 @@
 <Hero />
 <Marquee />
 
-<section id="artists" class="small-border px-10 pt-20 pb-10">
+<section id="artists" class="small-border px-10 py-20">
 	<div class="mx-auto max-w-7xl space-y-8">
 		<h2 class="font-anton text-8xl text-primary uppercase">The Artists</h2>
 		<p class="max-w-130 text-tertiary leading-7">
@@ -35,6 +35,6 @@
 			{/each}
 		</div>
 
-		<div class="grid grid-cols-2 gap-4 md:grid-cols-4"></div>
+		
 	</div>
 </section>
