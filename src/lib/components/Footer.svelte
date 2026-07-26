@@ -35,7 +35,7 @@
 						<a href={resolve('/piercings')}>Piercings</a>
 						<a href={resolve('/aftercare')}>Aftercare</a>
 						<a href={resolve('/faq')}>FAQ</a>
-						<a href={resolve('/contact')}>Contact</a>
+						<a href={resolve('/#contact')}>Contact</a>
 					</div>
 				</div>
 

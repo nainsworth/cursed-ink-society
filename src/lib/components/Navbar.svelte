@@ -14,7 +14,7 @@
 			<li><a href={resolve('/faq')}>FAQ</a></li>
 			<li>
 				<a
-					href={resolve('/contact')}
+					href={resolve('/#contact')}
 					class="btn-primary px-4 py-2 text-xs! font-semibold! hover:text-background!">Contact</a
 				>
 			</li>
