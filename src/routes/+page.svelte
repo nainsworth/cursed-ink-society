@@ -9,19 +9,25 @@
 <Hero />
 <Marquee />
 
-<section id="artists" class="px-10 pt-20 pb-10 small-border">
+<section id="artists" class="small-border px-10 pt-20 pb-10">
 	<div class="mx-auto max-w-7xl space-y-8">
-		<h2 class="font-anton text-6xl text-primary uppercase">The Artists</h2>
-
+		<h2 class="font-anton text-8xl text-primary uppercase">The Artists</h2>
+		<p class="max-w-130 text-tertiary leading-7">
+			Each artists books independently and have their unique styles. Select an artist to reach out
+			directly.
+		</p>
 		<div class="flex gap-6">
 			{#each artists.filter((a) => a.role === 'Artist' || a.role === 'Apprentice') as artist (artist.slug)}
-				<a href={resolve('/')} class="text-center font-space-mono uppercase transition-transform duration-100 hover:scale-110">
+				<a
+					href={resolve('/')}
+					class="text-center font-space-mono uppercase transition-transform duration-100 hover:scale-110"
+				>
 					<img
 						src={artist.image}
 						alt={artist.name}
 						class="h-128 w-full object-cover hover:drop-shadow-lg hover:drop-shadow-primary/50"
 					/>
-					<div class="mt-4 ">
+					<div class="mt-4">
 						<p class="text-sm font-bold text-primary">{artist.name}</p>
 						<p class="text-xs">{artist.role}</p>
 					</div>

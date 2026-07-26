@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import 'tailwindcss';
 
-
 @theme {
 	--font-anton: 'Anton', sans-serif;
 	--font-space-mono: 'Space Mono', monospace;
@@ -9,12 +8,13 @@
 
 	--color-primary: #f2f0ec;
 	--color-secondary: #8b8884;
+	--color-tertiary: #b8b5b0;
 	--color-background: #0b0b0b;
 }
 
 @layer base {
 	html {
-		@apply scroll-smooth
+		@apply scroll-smooth;
 	}
 	body {
 		@apply min-h-full min-w-full bg-background text-base text-secondary;
@@ -23,10 +23,10 @@
 
 @layer components {
 	.btn-primary {
-		@apply cursor-pointer bg-primary px-7 py-4 font-space-mono font-bold text-background hover:bg-primary/85 uppercase text-sm;
+		@apply cursor-pointer bg-primary px-7 py-4 font-space-mono text-sm font-bold text-background uppercase hover:bg-primary/85;
 	}
 	.btn-secondary {
-		@apply cursor-pointer border border-secondary bg-transparent px-7 py-4 font-space-mono font-bold text-primary hover:border-primary uppercase text-sm;
+		@apply cursor-pointer border border-secondary bg-transparent px-7 py-4 font-space-mono text-sm font-bold text-primary uppercase hover:border-primary;
 	}
 	.small-border {
 		border-bottom: 1px solid rgb(35, 35, 35);
