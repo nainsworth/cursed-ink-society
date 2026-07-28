@@ -11,14 +11,14 @@
 <Hero />
 <Marquee />
 
-<section id="artists" class="small-border px-10 py-20">
+<section id="artists" class="small-border px-8 py-14 md:px-10 md:py-20">
 	<div class="mx-auto max-w-7xl space-y-8">
-		<h2>The Artists</h2>
+		<h2 class="leading-24">The Artists</h2>
 		<p class="max-w-130 leading-7 text-tertiary">
 			Each artists books independently and have their unique styles. Select an artist to reach out
 			directly.
 		</p>
-		<div class="flex gap-6">
+		<div class="grid grid-cols-3 gap-6 md:flex">
 			{#each artists.filter((a) => a.role === 'Artist' || a.role === 'Apprentice') as artist (artist.slug)}
 				<a
 					href={resolve('/')}
@@ -27,7 +27,7 @@
 					<img
 						src={artist.image}
 						alt={artist.name}
-						class="h-128 w-full object-cover hover:drop-shadow-lg hover:drop-shadow-primary/50"
+						class=" h-96 w-full object-cover hover:drop-shadow-lg hover:drop-shadow-primary/50 md:h-128"
 					/>
 					<div class="mt-4">
 						<p class="font-bold text-primary">{artist.name}</p>
@@ -39,27 +39,30 @@
 	</div>
 </section>
 
-<section class="small-border px-10 py-20">
+<section class="small-border px-8 py-14 md:px-10 md:py-20">
 	<div class="mx-auto max-w-4xl">
-		<div class="flex items-center justify-between">
-			<div class="max-w-xl">
-				<h2 class="mb-4! leading-24">Body <br /> Piercings</h2>
+		<div class="grid grid-cols-2 items-center gap-8">
+			<h2 class="col-span-2 mb-4! leading-24 md:col-span-1 md:col-start-1 md:row-start-1">
+				Body <br /> Piercings
+			</h2>
+
+			<div class="md:col-start-1 md:row-start-2">
 				<p class="mb-10 leading-7 text-tertiary">
 					Body piercings by our resident piercer. Transparent pricing, implant-grade jewelry, and a
 					sterile studio — walk-ins welcome during open hours.
 				</p>
-				<a href={resolve('/piercings')} class="btn-primary">See Pricing & Gallery</a>
+				<a href={resolve('/piercings')} class="btn-primary ">See Pricing & Gallery</a>
 			</div>
 
 			{#if piercer}
 				<a
 					href={resolve('/')}
-					class="text-center font-space-mono uppercase transition-transform duration-100 hover:scale-110"
+					class="text-center font-space-mono uppercase transition-transform duration-100 hover:scale-110 md:col-start-2 md:row-span-2 md:row-start-1"
 				>
 					<img
 						src={piercer.image}
 						alt={piercer.name}
-						class="h-118 w-full object-cover hover:drop-shadow-lg hover:drop-shadow-primary/50"
+						class="h-96 mx-auto w-auto object-cover hover:drop-shadow-lg hover:drop-shadow-primary/50 md:h-118"
 					/>
 					<div class="mt-4">
 						<p class="font-bold text-primary">{piercer.name}</p>
@@ -71,9 +74,9 @@
 	</div>
 </section>
 
-<section id="contact" class="px-10 py-20">
+<section id="contact" class="px-8 py-14 md:px-10 md:py-20">
 	<div class="mx-auto max-w-7xl">
-		<div class="flex justify-between gap-14">
+		<div class="flex flex-col justify-between gap-14 md:flex-row">
 			<div class="flex-1">
 				<h2 class="mb-4! leading-24">Get in Touch</h2>
 				<p class="mb-8 leading-7 text-tertiary">
@@ -106,14 +109,6 @@
 </section>
 
 <style>
-	h2 {
-		font-family: var(--font-anton);
-		font-size: 6rem;
-		color: var(--color-primary);
-		text-transform: uppercase;
-		margin: 0;
-	}
-
 	input,
 	textarea {
 		background: #101010;

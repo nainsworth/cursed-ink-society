@@ -14,12 +14,12 @@
 		class="absolute inset-0 h-full w-full object-cover"
 	></video>
 
-	<div class="gradient absolute inset-0 flex items-center p-10">
+	<div class="gradient absolute inset-0 flex items-center p-8  md:p-10">
 		<div class="mx-auto w-full max-w-7xl">
 			<div class="mt-12 space-y-4">
 				<p class="font-space-mono text-xs tracking-[0.28em]">HOUMA, LOUISIANA</p>
-				<h1 class="font-anton text-[132px] leading-28 text-primary">
-					TATTOOS <br /> <span>& PIERCINGS</span>
+				<h1 class="font-anton text-7xl md:text-[132px] md:leading-28 text-primary">
+					TATTOOS <br /> <span class="">& PIERCINGS</span>
 				</h1>
 				<p class="mt-6 max-w-md font-archivo leading-[1.6] text-tertiary">
 					Seven artist and a resident piercer in the heart of Houma. Come as a walk-in or find your
@@ -37,7 +37,7 @@
 <style>
 	span {
 		color: transparent;
-		-webkit-text-stroke: 6px var(--color-primary);
+		-webkit-text-stroke: .045em var(--color-primary);
 	}
 
 	.gradient {

@@ -6,7 +6,7 @@
 
 <footer>
 	<div class="small-border px-10">
-		<div class="mx-auto flex max-w-7xl justify-between gap-7 py-12">
+		<div class="mx-auto flex flex-col md:flex-row max-w-7xl justify-between gap-7 py-12">
 			<div class="flex-1 space-y-4">
 				<p class="font-anton text-3xl text-primary uppercase">Cursed Ink Society</p>
 				<div class="font-space-mono text-sm leading-6">
@@ -56,7 +56,7 @@
 
 	<div class="px-10 py-5">
 		<div
-			class="mx-auto flex max-w-7xl items-center justify-between font-space-mono text-[10px] font-light uppercase"
+			class="mx-auto flex flex-col md:row gap-2 max-w-7xl items-center justify-between font-space-mono text-[10px] font-light uppercase"
 		>
 			<p>© {currentYear} Cursed Ink Society · Houma, LA</p>
 			<p>Must be 18+ for tattoos & piercings · Valid ID Required</p>

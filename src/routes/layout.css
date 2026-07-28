@@ -19,14 +19,18 @@
 	body {
 		@apply min-h-full min-w-full bg-background text-base text-secondary;
 	}
+		h2 {
+			@apply font-anton text-8xl text-primary uppercase
+		
+	}
 }
 
 @layer components {
 	.btn-primary {
-		@apply cursor-pointer bg-primary px-7 py-4 font-space-mono text-sm font-bold text-background uppercase hover:bg-primary/85;
+		@apply inline-block cursor-pointer bg-primary px-7 py-4 font-space-mono text-sm font-bold text-background uppercase hover:bg-primary/85;
 	}
 	.btn-secondary {
-		@apply cursor-pointer border border-secondary bg-transparent px-7 py-4 font-space-mono text-sm font-bold text-primary uppercase hover:border-primary;
+		@apply inline-block cursor-pointer border border-secondary bg-transparent px-7 py-4 font-space-mono text-sm font-bold text-primary uppercase hover:border-primary;
 	}
 	.small-border {
 		border-bottom: 1px solid rgb(35, 35, 35);
