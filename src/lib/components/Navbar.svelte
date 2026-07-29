@@ -7,9 +7,11 @@
 	<div class="mx-auto flex max-w-7xl items-center justify-between">
 		<a href={resolve('/')} class="font-anton text-3xl text-primary">CURSED INK SOCIETY</a>
 
-		<Hamburger type='squeeze' --color="var(--color-primary)" --padding="0"/>
+		<div class="md:hidden">
+			<Hamburger type='squeeze' --color="var(--color-primary)" --padding="0"/>
+		</div>
 
-		<ul class="hidden gap-6 font-space-mono text-xs font-semibold tracking-wider uppercase md:flex">
+		<ul class="hidden gap-6 font-space-mono text-xs font-semibold tracking-wider uppercase md:flex items-center">
 			<li><a href={resolve('/#artists')}>Artists</a></li>
 			<li><a href={resolve('/tattoos')}>Tattoos</a></li>
 			<li><a href={resolve('/piercings')}>Piercings</a></li>
