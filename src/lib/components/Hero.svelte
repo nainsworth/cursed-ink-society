@@ -3,7 +3,7 @@
 	import heroVideo from '../assets/hero-video.mp4';
 </script>
 
-<section id="hero" class="relative h-[75vh] max-h-155 w-full overflow-hidden">
+<section id="hero" class="relative h-[68dvh] max-h-200 w-full overflow-hidden">
 	<video
 		id="hero-video"
 		src={heroVideo}
