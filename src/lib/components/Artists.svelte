@@ -13,13 +13,13 @@
 		<div class="flex flex-wrap justify-center gap-6 text-center">
 			{#each artists.filter((a) => a.role === 'Artist' || a.role === 'Apprentice') as artist (artist.slug)}
 				<a
-					href={resolve('/')}
+					href={artist.instagram}
 					class="text-centerfont-space-mono uppercase transition-transform duration-100 hover:scale-110"
 				>
 					<img
 						src={artist.image}
 						alt={artist.name}
-						class="max-w-22 md:max-w-38  h-86 object-cover hover:drop-shadow-lg hover:drop-shadow-primary/50 md:h-128"
+						class="max-w-22 md:max-w-3  h-86 object-cover hover:drop-shadow-lg hover:drop-shadow-primary/50 md:h-128"
 					/>
 					<div class="mt-4">
 						<p class="font-bold text-primary">{artist.name}</p>
