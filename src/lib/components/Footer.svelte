@@ -1,13 +1,14 @@
 <script>
 	import { resolve } from '$app/paths';
+	// import SocialMedia from './SocialMedia.svelte';
 
 	const currentYear = new Date().getFullYear();
 </script>
 
 <footer>
 	<div class="small-border px-10">
-		<div class="mx-auto flex flex-col md:flex-row max-w-7xl justify-between gap-7 py-12">
-			<div class="flex-1 space-y-4">
+		<div class="mx-auto flex max-w-7xl flex-col justify-between gap-8 py-12 md:flex-row md:gap-4">
+			<div class="flex-1 space-y-2">
 				<p class="font-anton text-3xl text-primary uppercase">Cursed Ink Society</p>
 				<div class="font-space-mono text-sm leading-6">
 					<p>Tattoos & Piercings</p>
@@ -15,6 +16,7 @@
 					<p>Houma, La 70360</p>
 					<a href="tel:9852082334">(985) 208-2334</a>
 				</div>
+				<!-- <SocialMedia /> -->
 			</div>
 
 			<div class="flex flex-1 justify-between gap-7">
@@ -27,7 +29,7 @@
 					</div>
 				</div>
 
-				<div class="font-space-mono text-sm">
+				<div class="block font-space-mono text-sm">
 					<p class="mb-3 font-bold text-primary uppercase">Explore</p>
 					<div class="flex flex-col gap-2">
 						<a href={resolve('/#artists')}>Artists</a>
@@ -56,7 +58,7 @@
 
 	<div class="px-10 py-5">
 		<div
-			class="mx-auto flex flex-col md:row gap-2 max-w-7xl items-center justify-between font-space-mono text-[10px] font-light uppercase"
+			class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 font-space-mono text-[10px] font-light uppercase md:flex-row"
 		>
 			<p>© {currentYear} Cursed Ink Society · Houma, LA</p>
 			<p>Must be 18+ for tattoos & piercings · Valid ID Required</p>
