@@ -1,3 +1,3 @@
 <section>
-    <h1 class="text-9xl p-10">Piercings</h1>
+    <h1 class="text-7xl p-10">Piercings Page Coming Soon</h1>
 </section>
