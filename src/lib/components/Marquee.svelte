@@ -1,7 +1,7 @@
 <script>
-    import Marquee from 'svelte-fast-marquee';
+	import Marquee from 'svelte-fast-marquee';
 
-    let items = [
+	let items = [
 		{ id: 1, name: 'Black & Grey' },
 		{ id: 2, name: 'Fine Line' },
 		{ id: 3, name: 'Traditional' },
@@ -15,7 +15,7 @@
 	];
 </script>
 
-<section id="slider" class="small-border bg-transparent">
+<div id="slider" class="small-border bg-transparent">
 	<Marquee
 		speed={60}
 		gap="44px"
@@ -26,4 +26,4 @@
 			<p>✦</p>
 		{/each}
 	</Marquee>
-</section>
+</div>

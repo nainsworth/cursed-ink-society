@@ -19,9 +19,11 @@
 	body {
 		@apply min-h-full min-w-full bg-background text-base text-secondary;
 	}
-		h2 {
-			@apply font-anton text-8xl text-primary uppercase
-		
+	h2 {
+		@apply font-anton text-6xl md:text-8xl leading-16 md:leading-24  text-primary uppercase;
+	}
+	section {
+		@apply px-8 py-14 md:px-10 md:py-20;
 	}
 }
 
@@ -34,5 +36,8 @@
 	}
 	.small-border {
 		border-bottom: 1px solid rgb(35, 35, 35);
+	}
+	.section {
+		@apply px-8 py-14 md:px-10 md:py-12;
 	}
 }
