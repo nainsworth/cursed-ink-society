@@ -72,15 +72,7 @@ export const artists: Artist[] = [
 		role: 'Artist',
 		instagram: 'https://instagram.com/ta2luis'
 	},
-	{
-		slug: 'nadiya',
-		name: 'Nadiya',
-		image: profileNadiya,
-		specialties: [],
-		bio: '',
-		role: 'Artist',
-		instagram: 'https://instagram.com/electricsting'
-	},
+
 	{
 		slug: 'seth',
 		name: 'Seth',
