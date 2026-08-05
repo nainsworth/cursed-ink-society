@@ -23,7 +23,7 @@
 					<div class="space-y-2">
 						<p>Mon-Thu: 1-9pm</p>
 						<p>Fri-Sat: 1-10pm</p>
-						<p>Sun: Closed</p>
+						<p>Sun: Appointment ONLY</p>
 					</div>
 				</div>
 
