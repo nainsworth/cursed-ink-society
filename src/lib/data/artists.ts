@@ -4,7 +4,6 @@ import profileAshley from '../assets/images/profile-ashley.png';
 import profileCody from '../assets/images/profile-cody.png';
 import profileHarley from '../assets/images/profile-harley.png';
 import profileLuis from '../assets/images/profile-luis.png';
-import profileNadiya from '../assets/images/profile-nadiya.png';
 import profileSeth from '../assets/images/profile-seth.png';
 
 export interface Artist {
