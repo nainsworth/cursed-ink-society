@@ -19,7 +19,7 @@
 					<img
 						src={artist.image}
 						alt={artist.name}
-						class="max-w-22 md:max-w-3  h-86 object-cover hover:drop-shadow-lg hover:drop-shadow-primary/50 md:h-128"
+						class="max-w-22 md:max-w-42  h-86 object-cover hover:drop-shadow-lg hover:drop-shadow-primary/50 md:h-128"
 					/>
 					<div class="mt-4">
 						<p class="font-bold text-primary">{artist.name}</p>
