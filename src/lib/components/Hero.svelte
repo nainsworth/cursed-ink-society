@@ -9,7 +9,7 @@
 	).length;
 </script>
 
-<section id="hero" class="relative h-[68dvh] max-h-200 w-full overflow-hidden">
+<section id="hero" class="relative h-[68dvh] max-h-200 min-h-130 w-full overflow-hidden">
 	<video
 		id="hero-video"
 		src={heroVideo}
