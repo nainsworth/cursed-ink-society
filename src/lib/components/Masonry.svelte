@@ -52,7 +52,7 @@
 <style>
 	.masonry-grid {
 		column-count: 4;
-		column-width: 200px;
+		column-width: 11rem;
 		column-gap: 1rem;
 		width: 100%;
 	}
