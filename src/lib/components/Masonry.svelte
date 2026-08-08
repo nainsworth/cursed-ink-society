@@ -1,6 +1,6 @@
 <script lang="ts">
 	type MasonryType = 'general' | 'artist' | 'piercings';
-	type MasonryImage = { src: string };
+	type MasonryImage = { src: string; width: number; height: number };
 
 	let {
 		count,
@@ -24,12 +24,14 @@
 </script>
 
 <div class="masonry-grid">
-	{#each Array.from({ length: count }) as _, i (i)}
+	{#each Array.from({ length: count }), i (i)}
 		{@const img = randomPlaceholder()}
 		<button
 			type="button"
-			onclick={() => (selectedImage = img)}
-			class="masonry-item relative block cursor-pointer text-start transition-transform duration-300 hover:scale-102 hover:shadow-[0_0_8px_var(--color-primary)]"
+			onclick={() => {
+				if (selectedImage?.src !== img.src) selectedImage = img;
+			}}
+			class="masonry-item relative block text-start transition-transform duration-300 hover:scale-102 hover:shadow-[0_0_8px_var(--color-primary)]"
 		>
 			<img
 				src={img.src}
@@ -51,7 +53,6 @@
 					<p class="uppercase">Style</p>
 				{:else if type === 'piercings'}
 					<p class="uppercase">Style · 18+?</p>
-					<!-- <p class="uppercase">{item.style}{item.is18Plus && ' 18+'}</p> -->
 				{/if}
 			</div>
 		</button>
