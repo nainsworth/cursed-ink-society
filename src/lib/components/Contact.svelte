@@ -13,7 +13,7 @@
 						<input type="email" placeholder="Email" />
 					</div>
 					<input type="text" placeholder="Subject" />
-					<textarea class="h-30" placeholder="Message"></textarea>
+					<textarea class="h-30 resize-none" placeholder="Message"></textarea>
 					<button type="submit" class="btn-primary">Send Message</button>
 				</form>
 			</div>

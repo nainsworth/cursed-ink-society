@@ -14,12 +14,13 @@
 			{#each artists.filter((a) => a.role === 'Artist' || a.role === 'Apprentice') as artist (artist.slug)}
 				<a
 					href={artist.instagram}
-					class="text-centerfont-space-mono uppercase transition-transform duration-100 hover:scale-110"
+					target="_blank"
+					class="text-centerfont-space-mono uppercase transition-transform duration-100 hover:scale-110 hover:drop-shadow-lg hover:drop-shadow-primary/50"
 				>
 					<img
 						src={artist.image}
 						alt={artist.name}
-						class="max-w-22 md:max-w-42  h-86 object-cover hover:drop-shadow-lg hover:drop-shadow-primary/50 md:h-128"
+						class="h-86 max-w-22 object-cover md:h-128 md:max-w-42"
 					/>
 					<div class="mt-4">
 						<p class="font-bold text-primary">{artist.name}</p>
