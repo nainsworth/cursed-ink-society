@@ -1,7 +1,9 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
 
-	let { count }: { count: number } = $props();
+	type MasonryType = 'general' | 'artist' | 'piercings';
+
+	let { count, type }: { count: number; type: MasonryType } = $props();
 
 	const randomNum = (min: number, max: number) => {
 		return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -33,13 +35,20 @@
 				class="h-auto w-full object-cover"
 			/>
 			<div
-				class="absolute inset-x-0 bottom-0 flex h-36 flex-col justify-end bg-linear-to-t from-background to-transparent p-3 font-space-mono"
+				class="absolute inset-x-0 bottom-0 flex h-36 flex-col justify-end bg-linear-to-t from-background to-transparent p-3 font-space-mono text-xs text-tertiary"
 			>
-				<p class="text-xs font-bold text-primary uppercase">Artist</p>
-				<div class="flex justify-between text-[9px] text-tertiary">
-					<p>@instagram</p>
+				{#if type === 'general'}
+					<p class="text-sm font-bold text-primary uppercase">Artist</p>
+					<div class="flex justify-between">
+						<p>@instagram</p>
+						<p class="uppercase">Style</p>
+					</div>
+				{:else if type === 'artist'}
 					<p class="uppercase">Style</p>
-				</div>
+				{:else if type === 'piercings'}
+					<p class="uppercase">Style · 18+?</p>
+					<!-- <p class="uppercase">{item.style}{item.is18Plus && ' 18+'}</p> -->
+				{/if}
 			</div>
 		</a>
 	{/each}

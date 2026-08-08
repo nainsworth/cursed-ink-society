@@ -5,7 +5,7 @@
 
 <section class="small-border mx-auto max-w-7xl space-y-10">
 	<h2>Recent Ink</h2>
-	<Masonry count={12} />
+	<Masonry count={12} type="general" />
 	<div class="text-center">
 		<a href={resolve('/tattoos')} class="btn-primary">See Full Gallery</a>
 	</div>
