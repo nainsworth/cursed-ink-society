@@ -1,9 +1,12 @@
 <script lang="ts">
-	import { resolve } from '$app/paths';
-
 	type MasonryType = 'general' | 'artist' | 'piercings';
+	type MasonryImage = { src: string };
 
-	let { count, type }: { count: number; type: MasonryType } = $props();
+	let {
+		count,
+		type,
+		selectedImage = $bindable(null)
+	}: { count: number; type: MasonryType; selectedImage: MasonryImage | null } = $props();
 
 	const randomNum = (min: number, max: number) => {
 		return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -23,9 +26,10 @@
 <div class="masonry-grid">
 	{#each Array.from({ length: count }) as _, i (i)}
 		{@const img = randomPlaceholder()}
-		<a
-			href={resolve('/')}
-			class="masonry-item relative block transition-transform duration-300 hover:scale-102 hover:shadow-[0_0_8px_var(--color-primary)]"
+		<button
+			type="button"
+			onclick={() => (selectedImage = img)}
+			class="masonry-item relative block cursor-pointer text-start transition-transform duration-300 hover:scale-102 hover:shadow-[0_0_8px_var(--color-primary)]"
 		>
 			<img
 				src={img.src}
@@ -50,7 +54,7 @@
 					<!-- <p class="uppercase">{item.style}{item.is18Plus && ' 18+'}</p> -->
 				{/if}
 			</div>
-		</a>
+		</button>
 	{/each}
 </div>
 

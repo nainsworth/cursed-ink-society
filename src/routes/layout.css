@@ -20,12 +20,14 @@
 		@apply min-h-full min-w-full bg-background text-base text-secondary;
 	}
 	h2 {
-		@apply font-anton text-6xl md:text-8xl leading-16 md:leading-24  text-primary uppercase;
+		@apply font-anton text-6xl leading-16 text-primary uppercase md:text-8xl md:leading-24;
+	}
+	h3 {
+		@apply font-anton text-4xl leading-10 text-primary uppercase;
 	}
 	section {
 		@apply px-8 py-14 md:px-10 md:py-20;
 	}
-	
 }
 
 @layer components {
@@ -42,6 +44,6 @@
 		@apply px-8 py-14 md:px-10 md:py-12;
 	}
 	.social-icon {
-		@apply fill-secondary hover:fill-primary h-6 w-6
+		@apply h-6 w-6 fill-secondary hover:fill-primary;
 	}
 }
