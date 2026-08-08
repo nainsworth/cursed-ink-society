@@ -14,6 +14,7 @@ export interface Artist {
 	bio: string;
 	role: string;
 	instagram: string;
+	directMessage: string;
 }
 
 export const artists: Artist[] = [
@@ -24,7 +25,8 @@ export const artists: Artist[] = [
 		specialties: [],
 		bio: '',
 		role: 'Apprentice',
-		instagram: 'https://instagram.com/angelle_tattoos'
+		instagram: 'https://instagram.com/angelle_tattoos',
+		directMessage: 'https://ig.me/m/angelle_tattoos'
 	},
 	{
 		slug: 'anthony',
@@ -33,7 +35,8 @@ export const artists: Artist[] = [
 		specialties: [],
 		bio: '',
 		role: 'Artist',
-		instagram: 'https://instagram.com/buddha_ta2'
+		instagram: 'https://instagram.com/buddha_ta2',
+		directMessage: 'https://ig.me/m/buddha_ta2'
 	},
 	{
 		slug: 'ashley',
@@ -42,7 +45,8 @@ export const artists: Artist[] = [
 		specialties: [],
 		bio: '',
 		role: 'Artist',
-		instagram: 'https://instagram.com/ashleyxxkarma'
+		instagram: 'https://instagram.com/ashleyxxkarma',
+		directMessage: 'https://ig.me/m/ashleyxxkarma'
 	},
 	{
 		slug: 'cody',
@@ -51,7 +55,8 @@ export const artists: Artist[] = [
 		specialties: [],
 		bio: '',
 		role: 'Artist',
-		instagram: 'https://instagram.com/codycrochettattoos'
+		instagram: 'https://instagram.com/codycrochettattoos',
+		directMessage: 'https://ig.me/m/codycrochettattoos'
 	},
 	{
 		slug: 'harley',
@@ -60,7 +65,8 @@ export const artists: Artist[] = [
 		specialties: [],
 		bio: '',
 		role: 'Piercer',
-		instagram: 'https://instagram.com/harley.rose25'
+		instagram: 'https://instagram.com/harley.rose25',
+		directMessage: 'https://ig.me/m/harley.rose25'
 	},
 	{
 		slug: 'luis',
@@ -69,7 +75,8 @@ export const artists: Artist[] = [
 		specialties: [],
 		bio: '',
 		role: 'Artist',
-		instagram: 'https://instagram.com/ta2luis'
+		instagram: 'https://instagram.com/ta2luis',
+		directMessage: 'https://ig.me/m/ta2luis'
 	},
 
 	{
@@ -79,6 +86,7 @@ export const artists: Artist[] = [
 		specialties: [],
 		bio: '',
 		role: 'Artist',
-		instagram: 'https://instagram.com/sethta2_bp'
+		instagram: 'https://instagram.com/sethta2_bp',
+		directMessage: 'https://ig.me/m/sethta2_bp'
 	}
 ];
