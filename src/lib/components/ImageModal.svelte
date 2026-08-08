@@ -55,9 +55,13 @@
 					</p>
 				</div>
 				<div class="flex flex-col gap-3 text-center">
-					<a href={resolve('/')} class="btn-primary flex-1">Book with artists</a>
-					<a href={resolve('/')} class="btn-secondary flex-1 border-[#333333]"
-						>View full portfolio</a
+					<a href={resolve('/')} onclick={() => closeModal()} class="btn-primary flex-1"
+						>Book with artists</a
+					>
+					<a
+						href={resolve('/')}
+						onclick={() => closeModal()}
+						class="btn-secondary flex-1 border-[#333333]">View full portfolio</a
 					>
 				</div>
 			</div>
