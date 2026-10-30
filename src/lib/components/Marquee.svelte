@@ -1,5 +1,6 @@
 <script>
 	import Marquee from 'svelte-fast-marquee';
+	import { page } from '$app/state';
 
 	let items = [
 		{ id: 1, name: 'Black & Grey' },
@@ -24,6 +25,10 @@
 		{#each items as item (item.id)}
 			<p>{item.name}</p>
 			<p>✦</p>
+			{#if page.url.pathname == '/coming-soon'}
+				<p>New Site Coming Soon</p>
+				<p>✦</p>
+			{/if}
 		{/each}
 	</Marquee>
 </div>
