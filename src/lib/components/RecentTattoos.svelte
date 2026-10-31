@@ -11,6 +11,6 @@
 	<Masonry count={12} type="general" bind:selectedImage />
 	<ImageModal bind:selectedImage />
 	<div class="text-center">
-		<a href={resolve('/tattoos')} class="btn-primary">See Full Gallery</a>
+		<a href={resolve('tattoos')} class="btn-primary">See Full Gallery</a>
 	</div>
 </section>

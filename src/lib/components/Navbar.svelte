@@ -6,26 +6,11 @@
 	let open = $state(false);
 
 	const navItems = [
-		{
-			label: 'Artists',
-			href: resolve('/#artists')
-		},
-		{
-			label: 'Tattoos',
-			href: resolve('/tattoos')
-		},
-		{
-			label: 'Piercings',
-			href: resolve('/piercings')
-		},
-		{
-			label: 'Aftercare',
-			href: resolve('/aftercare')
-		},
-		{
-			label: 'FAQ',
-			href: resolve('/faq')
-		}
+		{ label: 'Artists', href: resolve('#artists') },
+		{ label: 'Tattoos', href: resolve('tattoos') },
+		{ label: 'Piercings', href: resolve('piercings') },
+		{ label: 'Aftercare', href: resolve('aftercare') },
+		{ label: 'FAQ', href: resolve('faq') }
 	];
 </script>
 
@@ -48,7 +33,7 @@
 
 			<li>
 				<a
-					href={resolve('/#contact')}
+					href={resolve('#contact')}
 					class="btn-primary px-4 py-2 text-xs! font-semibold! hover:text-background!">Contact</a
 				>
 			</li>
@@ -65,12 +50,10 @@
 			{/each}
 			<li>
 				<a
-					href={resolve('/#contact')}
+					href={resolve('#contact')}
 					class="btn-primary inline-block px-4 py-2 text-xs! font-semibold!"
-					onclick={() => (open = false)}
+					onclick={() => (open = false)}>Contact</a
 				>
-					Contact
-				</a>
 			</li>
 		</ul>
 	{/if}

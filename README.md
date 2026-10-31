@@ -21,15 +21,15 @@ npm run dev -- --open
 
 ## Scripts
 
-| Command | What it does |
-| --- | --- |
-| `npm run dev` | Start the Vite dev server |
-| `npm run build` | Production build |
-| `npm run preview` | Serve the production build locally |
-| `npm run check` | Type-check Svelte + TS (`svelte-check`) |
-| `npm run check:watch` | Same, in watch mode |
-| `npm run lint` | Prettier check + ESLint |
-| `npm run format` | Format everything with Prettier |
+| Command               | What it does                            |
+| --------------------- | --------------------------------------- |
+| `npm run dev`         | Start the Vite dev server               |
+| `npm run build`       | Production build                        |
+| `npm run preview`     | Serve the production build locally      |
+| `npm run check`       | Type-check Svelte + TS (`svelte-check`) |
+| `npm run check:watch` | Same, in watch mode                     |
+| `npm run lint`        | Prettier check + ESLint                 |
+| `npm run format`      | Format everything with Prettier         |
 
 ## Project structure
 
@@ -61,12 +61,12 @@ Theme tokens live in the `@theme` block of [`src/routes/layout.css`](src/routes/
 
 **Colors**
 
-| Token | Value | Use |
-| --- | --- | --- |
-| `background` | `#0b0b0b` | Page background |
-| `primary` | `#f2f0ec` | Headings, buttons, emphasis |
-| `secondary` | `#8b8884` | Default body text |
-| `tertiary` | `#b8b5b0` | Paragraph copy on dark sections |
+| Token        | Value     | Use                             |
+| ------------ | --------- | ------------------------------- |
+| `background` | `#0b0b0b` | Page background                 |
+| `primary`    | `#f2f0ec` | Headings, buttons, emphasis     |
+| `secondary`  | `#8b8884` | Default body text               |
+| `tertiary`   | `#b8b5b0` | Paragraph copy on dark sections |
 
 **Fonts** — `font-anton` (display headings), `font-space-mono` (labels, nav, UI), `font-archivo` (body).
 

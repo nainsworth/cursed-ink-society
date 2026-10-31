@@ -1,6 +1,6 @@
 <script>
 	import { resolve } from '$app/paths';
-	import { artists } from '$lib/data/artists';
+	import { artists } from '#lib/data/artists.js';
 </script>
 
 <section id="artists" class="small-border section">
