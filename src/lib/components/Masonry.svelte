@@ -1,31 +1,23 @@
 <script lang="ts">
+	import { artists } from '#lib/data/artists.js';
+	import { recentWork, type Work } from '#lib/data/recentWork.js';
+
 	type MasonryType = 'general' | 'artist' | 'piercings';
-	type MasonryImage = { src: string; width: number; height: number };
 
 	let {
 		count,
 		type,
 		selectedImage = $bindable(null)
-	}: { count: number; type: MasonryType; selectedImage: MasonryImage | null } = $props();
+	}: { count: number; type: MasonryType; selectedImage: Work | null } = $props();
 
-	const randomNum = (min: number, max: number) => {
-		return Math.floor(Math.random() * (max - min + 1)) + min;
-	};
-
-	const randomPlaceholder = () => {
-		const width = 400;
-		const height = randomNum(300, 500);
-		return {
-			src: `https://placehold.co/${width}x${height}/171717/8b8884?text=Tattoo Placeholder`,
-			width,
-			height
-		};
-	};
+	const items = $derived(
+		[...recentWork].sort((a, b) => b.date.localeCompare(a.date)).slice(0, count)
+	);
 </script>
 
 <div class="masonry-grid">
-	{#each Array.from({ length: count }), i (i)}
-		{@const img = randomPlaceholder()}
+	{#each items as img (img.src)}
+		{@const artist = artists.find((a) => a.slug === img.artist)}
 		<button
 			type="button"
 			onclick={() => {
@@ -35,24 +27,25 @@
 		>
 			<img
 				src={img.src}
-				width={img.width}
-				height={img.height}
-				alt="Placeholder tattoo"
+				width="400"
+				alt={img.alt}
+				loading="lazy"
 				class="h-auto w-full object-cover"
 			/>
 			<div
 				class="absolute inset-x-0 bottom-0 flex h-36 flex-col justify-end bg-linear-to-t from-background to-transparent p-3 font-space-mono text-xs text-tertiary"
 			>
 				{#if type === 'general'}
-					<p class="text-sm font-bold text-primary uppercase">Artist</p>
+					<p class="text-sm font-bold text-primary uppercase">{artist?.name}</p>
 					<div class="flex justify-between">
-						<p>@instagram</p>
-						<p class="uppercase">Style</p>
+						<p>@{artist?.instagram.split('/').pop()}</p>
+						<p class="uppercase hidden sm:block">{img.style}</p>
 					</div>
 				{:else if type === 'artist'}
-					<p class="uppercase">Style</p>
+					<p class="uppercase">{img.style}</p>
 				{:else if type === 'piercings'}
-					<p class="uppercase">Style · 18+?</p>
+					<!-- <p class="uppercase">{img.style} · 18+?</p> -->
+					<p class="uppercase">{img.style}</p>
 				{/if}
 			</div>
 		</button>

@@ -1,10 +1,13 @@
 <script lang="ts">
-	import { resolve } from '$app/paths';
 	import Xicon from '@lucide/svelte/icons/x';
+	import { artists } from '#lib/data/artists.js';
+	import type { Work } from '#lib/data/recentWork.js';
 
-	type MasonryImage = { src: string; width: number; height: number };
+	// type MasonryImage = { src: string; width: number; height: number };
 
-	let { selectedImage = $bindable(null) }: { selectedImage: MasonryImage | null } = $props();
+	let { selectedImage = $bindable(null) }: { selectedImage: Work | null } = $props();
+
+	const artist = $derived(artists.find((a) => a.slug === selectedImage?.artist));
 
 	const closeModal = () => {
 		selectedImage = null;
@@ -34,31 +37,35 @@
 			class="relative flex flex-col border border-[#333333] bg-[#0e0e0e] md:flex-row lg:w-full lg:max-w-4xl"
 		>
 			<button
-				class="absolute top-0 right-0 p-2 hover:text-primary"
+				class="absolute top-0 right-0 bg-black/25 p-2 hover:text-primary md:bg-none"
 				type="button"
 				onclick={() => closeModal()}><Xicon /></button
 			>
 			<img
 				src={selectedImage.src}
-				alt="Placeholder"
-				class="object-cover md:max-h-[90dvh] lg:max-h-none lg:w-full"
+				alt={selectedImage.alt}
+				class="max-h-[45dvh] md:max-h-[90dvh] w-full max-w-xl object-cover"
 			/>
 			<div class="flex max-w-100 flex-col justify-between gap-4 p-6 md:max-w-80">
 				<div class="flex flex-col gap-1">
-					<p class="mb-2 font-space-mono text-xs uppercase">Style</p>
-					<h3>Artist</h3>
-					<p class="font-space-mono text-sm font-semibold">@instagram</p>
+					<p class="mb-2 font-space-mono text-xs uppercase">{selectedImage.style}</p>
+					<h3>{artist?.name}</h3>
+					<p class="font-space-mono text-sm font-semibold">@{artist?.instagram.split('/').pop()}</p>
 
 					<p class="my-2">
-						Like this piece? Book directly with Artist through instagram or browse their portfolio.
+						Like this piece? Book directly with {artist?.name} through instagram or browse their portfolio.
 					</p>
 				</div>
 				<div class="flex flex-col gap-3 text-center">
-					<a href={resolve('/')} onclick={() => closeModal()} class="btn-primary flex-1"
-						>Book with artists</a
+					<a
+						href={artist?.directMessage}
+						target="_blank"
+						onclick={() => closeModal()}
+						class="btn-primary flex-1">Book with {artist?.name}</a
 					>
 					<a
-						href={resolve('/')}
+						href={artist?.instagram}
+						target="_blank"
 						onclick={() => closeModal()}
 						class="btn-secondary flex-1 border-[#333333]">View full portfolio</a
 					>
