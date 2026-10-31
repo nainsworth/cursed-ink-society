@@ -1,10 +1,10 @@
-import profileAngelle from '../assets/images/profile-angelle.png';
-import profileAnthony from '../assets/images/profile-anthony.png';
-import profileAshley from '../assets/images/profile-ashley.png';
-import profileCody from '../assets/images/profile-cody.png';
-import profileHarley from '../assets/images/profile-harley.png';
-import profileLuis from '../assets/images/profile-luis.png';
-import profileSeth from '../assets/images/profile-seth.png';
+import profileAngelle from '#lib/assets/images/profile/profile-angelle.png';
+import profileAnthony from '#lib/assets/images/profile/profile-anthony.png';
+import profileAshley from '#lib/assets/images/profile/profile-ashley.png';
+import profileCody from '#lib/assets/images/profile/profile-cody.png';
+import profileHarley from '#lib/assets/images/profile/profile-harley.png';
+import profileLuis from '#lib/assets/images/profile/profile-luis.png';
+import profileSeth from '#lib/assets/images/profile/profile-seth.png';
 
 export interface Artist {
 	slug: string;
@@ -24,7 +24,7 @@ export const artists: Artist[] = [
 		image: profileAngelle,
 		specialties: [],
 		bio: '',
-		role: 'Apprentice',
+		role: 'Artist',
 		instagram: 'https://instagram.com/angelle_tattoos',
 		directMessage: 'https://ig.me/m/angelle_tattoos'
 	},

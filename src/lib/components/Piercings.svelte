@@ -23,6 +23,7 @@
 			{#if piercer}
 				<a
 					href={piercer.instagram}
+					target="_blank"
 					class="col-start-2 row-span-2 row-start-1 text-center font-space-mono uppercase transition-transform duration-100 hover:scale-110"
 				>
 					<img

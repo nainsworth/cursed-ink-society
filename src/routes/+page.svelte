@@ -3,11 +3,11 @@
 	import Contact from '#lib/components/Contact.svelte';
 	import Hero from '#lib/components/Hero.svelte';
 	import Piercings from '#lib/components/Piercings.svelte';
-	import RecentTattoos from '#lib/components/RecentTattoos.svelte';
+	import RecentWork from '#lib/components/RecentWork.svelte';
 </script>
 
 <Hero />
 <Artists />
 <Piercings />
-<RecentTattoos />
+<RecentWork />
 <Contact />
