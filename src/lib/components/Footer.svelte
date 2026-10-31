@@ -33,7 +33,8 @@
 					<p class="mb-3 font-bold text-primary uppercase">Explore</p>
 					<div class="flex flex-col gap-2">
 						<a href={resolve('#artists')}>Artists</a>
-						<a href={resolve('tattoos')}>Tattoos</a>
+						<!-- <a href={resolve('tattoos')}>Tattoos</a> -->
+						<a href="https://www.instagram.com/cursedinksociety" target="_blank">Tattoos</a>
 						<a href={resolve('piercings')}>Piercings</a>
 						<a href={resolve('aftercare')}>Aftercare</a>
 						<!-- <a href={resolve('faq')}>FAQ</a> -->

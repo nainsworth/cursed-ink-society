@@ -1,5 +1,4 @@
 <script>
-	import { resolve } from '$app/paths';
 	import { artists } from '#lib/data/artists.js';
 </script>
 

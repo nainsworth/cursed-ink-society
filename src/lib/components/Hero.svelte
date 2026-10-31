@@ -34,7 +34,8 @@
 				<div class="mt-12 space-x-2">
 					<a href={resolve('#artists')} class="btn-primary spac">BOOK AN ARTIST</a>
 
-					<a href={resolve('tattoos')} class="btn-secondary">TATTOO GALLERY</a>
+					<!-- <a href={resolve('tattoos')} class="btn-secondary">TATTOO GALLERY</a> -->
+					<a href="https://www.instagram.com/cursedinksociety" target="_blank" class="btn-secondary">TATTOO GALLERY</a>
 				</div>
 			</div>
 		</div>

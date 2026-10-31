@@ -7,10 +7,11 @@
 
 	const navItems = [
 		{ label: 'Artists', href: resolve('#artists') },
-		{ label: 'Tattoos', href: resolve('tattoos') },
+		// { label: 'Tattoos', href: resolve('tattoos') },
+		{ label: 'Tattoos', href: 'https://www.instagram.com/cursedinksociety' },
 		{ label: 'Piercings', href: resolve('piercings') },
-		{ label: 'Aftercare', href: resolve('aftercare') },
-		{ label: 'FAQ', href: resolve('faq') }
+		{ label: 'Aftercare', href: resolve('aftercare') }
+		// { label: 'FAQ', href: resolve('faq') }
 	];
 </script>
 
@@ -28,7 +29,8 @@
 			class="hidden items-center gap-6 font-space-mono text-xs font-semibold tracking-wider uppercase md:flex"
 		>
 			{#each navItems as item (item.label)}
-				<li><a href={item.href}>{item.label}</a></li>
+				<li><a href={item.href} target={item.label === 'Tattoos' ? '_blank' : undefined} onclick={() => (open = false)}>{item.label}</a></li>
+
 			{/each}
 
 			<li>
