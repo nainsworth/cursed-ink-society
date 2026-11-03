@@ -40,10 +40,10 @@ export const piercingProducts: PiercingType[] = [
 		type: 'Body',
 		products: [
 			{ product: 'Surface', price: '$100' },
-			{ product: 'Nipple (Single)', price: '$50' },
-			{ product: 'Nipple (Double)', price: '$100' },
 			{ product: 'Navel', price: '$50' },
-			{ product: 'Genitals', price: '$100' }
+			{ product: 'Nipple (Single)', price: '$50', note: '18+' },
+			{ product: 'Nipple (Double)', price: '$100', note: '18+' },
+			{ product: 'Genitals', price: '$100', note: '18+' }
 		]
 	},
 	{
@@ -74,12 +74,14 @@ export const piercingProducts: PiercingType[] = [
 		type: 'Misc.',
 		products: [
 			{
-				product: 'Jewelry Change (With Purchase)',
-				price: 'Free'
+				product: 'Free Jewelry Change',
+				price: 'Free',
+				note: 'With Purchase Of Jewelry'
 			},
 			{
-				product: 'Jewelry Change (Outside Jewelry)',
-				price: '$5'
+				product: 'BYOJ Jewelry Change',
+				price: '$5',
+				note: 'Bring Your Own Jewelry'
 			},
 			{
 				product: 'Aftercare',
