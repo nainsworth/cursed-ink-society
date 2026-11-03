@@ -39,8 +39,8 @@ export const piercingProducts: PiercingType[] = [
 	{
 		type: 'Body',
 		products: [
+            { product: 'Navel', price: '$50' },
 			{ product: 'Surface', price: '$100' },
-			{ product: 'Navel', price: '$50' },
 			{ product: 'Nipple (Single)', price: '$50', note: '18+' },
 			{ product: 'Nipple (Double)', price: '$100', note: '18+' },
 			{ product: 'Genitals', price: '$100', note: '18+' }
