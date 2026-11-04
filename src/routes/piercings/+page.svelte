@@ -34,8 +34,8 @@
 				</div>
 			{/each}
 		</div>
-		<p class="max-w-2xl text-sm italic">
-			Prices include a basic titanium end. Upgraded jewelry priced separately. All clients must be
+		<p class="max-w-xl text-sm italic">
+			Prices include a basic titanium end. All clients must be
 			12+ with valid ID or Birth Certificate; genital and nipple piercings are 18+.
 		</p>
 	</div>
