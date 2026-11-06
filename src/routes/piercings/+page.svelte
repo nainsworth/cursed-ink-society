@@ -34,10 +34,14 @@
 				</div>
 			{/each}
 		</div>
-		<p class="max-w-xl text-sm italic">
-			Prices include a basic titanium end. All clients must be
-			12+ with valid ID or Birth Certificate; genital and nipple piercings are 18+.
-		</p>
+		<div class="max-w-2xl space-y-2 text-sm italic">
+			<p>All pricing includes base titanium jewelry and saline aftercare solution.</p>
+			<p>
+				Clients 18+ must bring a valid photo ID. Clients under 18 must have a parent or guardian
+				present with a valid photo ID. Minors must also bring a birth certificate and photo ID
+				(school ID accepted).
+			</p>
+		</div>
 	</div>
 </section>
 <section id="piercing-gallery" class="section small-border space-y-10 pt-0">
@@ -47,7 +51,7 @@
 			<!-- <p>May contain 18+ content</p> -->
 		</div>
 		<div class="flex flex-col gap-10">
-			<h3 class="text-secondary text-center">COMING SOON!</h3>
+			<h3 class="text-center text-secondary">COMING SOON!</h3>
 		</div>
 	</div>
 
