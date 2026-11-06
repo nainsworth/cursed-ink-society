@@ -27,6 +27,8 @@
 	<meta property="og:description" content="Tattoos and piercings in Houma, LA." />
 	<meta property="og:image" content="https://www.cursedinksociety.com/og-image.png" />
 	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="author" content="Nicholas Ainsworth" />
+
 	<title>{title}</title>
 	<link rel="icon" href={favicon} />
 </svelte:head>

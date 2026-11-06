@@ -59,10 +59,15 @@
 
 	<div class="px-10 py-5">
 		<div
-			class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 font-space-mono text-[10px] font-light uppercase md:flex-row"
+			class="mx-auto grid max-w-7xl justify-items-center gap-2 font-space-mono text-[10px] font-light uppercase md:grid-cols-2 md:gap-y-1"
 		>
-			<p>© {currentYear} Cursed Ink Society · Houma, LA</p>
-			<p>Must be 18+ for tattoos & piercings · Valid ID Required</p>
+			<p class="md:justify-self-start">©{currentYear} Cursed Ink Society · Houma, LA</p>
+			<p class="md:row-span-2 md:self-center md:justify-self-end">
+				Must be 18+ for tattoos & piercings · Valid ID Required
+			</p>
+			<a class="md:justify-self-start" href="https://github.com/nainsworth" target="_blank">
+				Site by Nick
+			</a>
 		</div>
 	</div>
 </footer>
