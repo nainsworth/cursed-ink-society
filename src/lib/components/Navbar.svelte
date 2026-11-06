@@ -10,7 +10,7 @@
 		// { label: 'Tattoos', href: resolve('tattoos') },
 		{ label: 'Tattoos', href: 'https://www.instagram.com/cursedinksociety' },
 		{ label: 'Piercings', href: resolve('piercings') },
-		{ label: 'Aftercare', href: resolve('aftercare') }
+		// { label: 'Aftercare', href: resolve('aftercare') }
 		// { label: 'FAQ', href: resolve('faq') }
 	];
 </script>
