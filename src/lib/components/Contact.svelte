@@ -72,8 +72,8 @@
 					<input type="text" name="subject" placeholder="Subject" required />
 					<textarea name="message" class="h-30 resize-none" placeholder="Message" required
 					></textarea>
-					<div class="flex flex-wrap gap-4">
-						<div {@attach hcaptcha} class="h-16 w-60 origin-top-left scale-80"></div>
+					<div class="flex flex-col flex-wrap gap-4 min-[990px]:flex-row sm:max-[880px]:flex-row">
+						<div {@attach hcaptcha} class="h-15 w-60 origin-top-left scale-80"></div>
 
 						<button type="submit" class="btn-primary flex-1" disabled={status === 'sending'}>
 							{status === 'sending' ? 'Sending...' : 'Send Message'}
