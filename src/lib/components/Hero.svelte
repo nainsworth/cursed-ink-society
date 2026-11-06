@@ -35,7 +35,9 @@
 					<a href={resolve('#artists')} class="btn-primary spac">BOOK AN ARTIST</a>
 
 					<!-- <a href={resolve('tattoos')} class="btn-secondary">TATTOO GALLERY</a> -->
-					<a href="https://www.instagram.com/cursedinksociety" target="_blank" class="btn-secondary">TATTOO GALLERY</a>
+					<a href="https://www.instagram.com/cursedinksociety" target="_blank" class="btn-secondary"
+						>TATTOO GALLERY</a
+					>
 				</div>
 			</div>
 		</div>
@@ -51,6 +53,6 @@
 	}
 
 	.gradient {
-		background: linear-gradient(rgba(11, 11, 11, 0.6), rgba(11, 11, 11, 0.98));
+		background: linear-gradient(rgba(11, 11, 11, 0.5), rgba(11, 11, 11, 0.9));
 	}
 </style>
