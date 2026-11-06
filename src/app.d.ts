@@ -8,6 +8,16 @@ declare global {
 		// interface PageState {}
 		// interface Platform {}
 	}
+	interface Window {
+		hcaptcha?: {
+			render: (
+				container: HTMLElement,
+				params: { sitekey: string; theme?: 'light' | 'dark' }
+			) => string;
+			reset: (widgetId?: string) => void;
+		};
+		hcaptchaOnLoad?: () => void;
+	}
 }
 
 export {};
