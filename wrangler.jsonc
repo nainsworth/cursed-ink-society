@@ -8,6 +8,6 @@
 		"directory": ".svelte-kit/cloudflare"
 	},
 	"vars": {
-		"MAINTENANCE_MODE": "true"
+		"MAINTENANCE_MODE": "false"
 	}
 }
